@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: shubhamvaishnavv/hello-world
+  tag: latest
+  pullPolicy: IfNotPresent
+service:
+  type: NodePort
+  port: 80
+  nodePort: 30007
+deployment:
+  resources: {}
